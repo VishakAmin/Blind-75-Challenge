@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balanced Brackets Checker</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f9f9f9;
+        padding: 2rem;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      pre {
+        background: #efefef;
+        padding: 1rem;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 0.9rem;
+      }
+
+      input,
+      button {
+        padding: 0.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .result {
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Balanced Brackets Checker</h1>
+
+    <h2>🧠 Problem Statement:</h2>
+    <p>
+      Given a string <code>str</code> consisting of characters such as
+      <code>'('</code>, <code>')'</code>, <code>'{'</code>, <code>'}'</code>,
+      <code>'['</code> and <code>']'</code>, determine if the input string is
+      properly balanced.
+    </p>
+
+    <p><strong>A string is considered balanced if:</strong></p>
+    <ul>
+      <li>Each opening bracket is closed by the same type of bracket</li>
+      <li>Open brackets are closed in the correct order</li>
+      <li>
+        Any subset of brackets enclosed within a matched pair must also be valid
+      </li>
+    </ul>
+
+    <h2>📥 Input:</h2>
+    <pre>str: string (only contains (, ), {, }, [, ])</pre>
+
+    <h2>📤 Output:</h2>
+    <pre>true or false</pre>
+
+    <h2>💡 Examples:</h2>
+    <pre>
+Input: str = "[]"
+Output: true
+
+Input: str = "([)]"
+Output: false
+
+Input: str = "([]){}"
+Output: true
+  </pre
+    >
+
+    <h2>✅ Try it yourself:</h2>
+    <input
+      type="text"
+      id="bracketInput"
+      placeholder="Enter bracket string e.g. ([{}])"
+    />
+    <button id="checkBtn">Check Balance</button>
+
+    <div class="result" id="result"></div>
+
+    <script src="./index.mjs"></script>
+  </body>
+</html>
